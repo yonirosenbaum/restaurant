@@ -1,0 +1,649 @@
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: Selima, Canvas, Calibri, sans-serif;
+  font-size: 16px;
+}
+
+header {
+  height: 100vh;
+  position: relative;
+  background: #0e131c url("./img/main_bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: #e6e6e6;
+}
+
+main {
+  color: #454754;
+  text-align: center;
+}
+
+footer {
+  background-color: #ff8e46;
+  color: #f9f9f9;
+  line-height: 2;
+  position: relative;
+}
+
+#navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.nav-container,
+#ourStory,
+#cuisine,
+#bookUs,
+#footer-info,
+#copyright-text {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header */
+
+nav {
+  font-size: 13px;
+}
+
+nav a {
+  margin: 0 10px;
+  padding-bottom: 3px;
+}
+
+nav a:nth-of-type(5) {
+  margin-right: 0;
+}
+
+nav a.active {
+  border-bottom: 2px solid #e6e6e6;
+}
+
+.nav-container {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  transition: all 0.7s ease-in-out;
+  /* border: 1px solid yellow; */
+  box-sizing: border-box;
+}
+
+.nav-container.fixed_menu {
+  background-color: #ff8e46  ;
+  box-shadow: 0px -3px 15px inset #f95414; /*, #f6b046)*/   
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  padding: 10px 40px;
+  transition: all 0.7s ease-in-out;
+  z-index: 5;
+}
+
+/* Hamburger Menu (continued in the media queries section) */
+
+.navbarCollapse {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar_bg {
+  width: 100%;
+  height: 200px;
+  /*background: linear-gradient(to bottom, #0e131c, transparent);*/
+  background: linear-gradient(to bottom, #f6b046, transparent);
+}
+
+#logo {
+  border-bottom: 2px solid #e6e6e6;
+  letter-spacing: 3px;
+  font-size: 25px;
+}
+
+#logo a {
+  color: #e6e6e6;
+}
+
+.hero {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  color: #f9f9f9;
+  text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white;
+
+}
+h1.brand{
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+
+}
+.hero-header {
+  color: #d3a261;
+  font-family: "Allura", cursive, Calibri, sans-serif;
+  text-transform: none;
+  font-size: 60px;
+}
+.brand,
+.secondary-header {
+  letter-spacing: 15px;
+  margin-top: -20px;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+header .symbol {
+  color: #d3a261;
+  font-size: 20px;
+  display: block;
+  position: relative;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+header .symbol:before,
+header .symbol:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: 60%;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 40%;
+  background-color: #f9f9f9;
+}
+
+header .symbol:before {
+  margin-right: 10px;
+  left: 0;
+}
+
+header .symbol:after {
+  margin-left: 10px;
+  right: 0;
+}
+
+header h2 {
+  font-size: 15px;
+  letter-spacing: 5px;
+}
+
+/* Main */
+
+section#ourStory,
+section#cuisine,
+section#bookUs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.hero-container {
+  box-sizing: border-box;
+  padding: 40px;
+  width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.secondary-header {
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  margin-bottom: 1.8rem;
+}
+
+.hero-container a {
+  color: #d3a261;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #d3a261;
+}
+
+.hero-container h2 {
+  margin-top: 20px;
+}
+
+.hero-container p:nth-of-type(2) {
+  line-height: 1.8;
+}
+
+.main-link {
+  display: flex;
+  margin-top: 2rem;
+  max-width: 10rem;
+  border: 2px solid #d3a261;
+  padding: 1rem;
+  padding-top: 0.3rem;
+  align-items: center;
+  align-self: center;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.main-link:hover {
+  color: white;
+  background: #d3a261;
+}
+
+.symbol {
+  color: #74788e;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  margin-left: 0px;
+}
+.about-us-expander{
+  display: none;
+}
+.display-about-us{
+  display: none !important;
+}
+
+section img {
+  width: 60%;
+  min-width: 300px;
+}
+
+#cuisine .hero-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px 20px;
+  max-height: 450px;
+}
+
+#cuisine img {
+  width: 100%;
+  min-width: 50px;
+  flex-grow: 1;
+}
+
+.right-side {
+  align-self: end;
+}
+
+.left-side {
+  align-self: start;
+}
+
+#bookUs .hero-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 20px 20px;
+}
+
+#bookUs img {
+  width: 100%;
+  min-width: 50px;
+  max-width: 320px;
+}
+.bowls-image{
+  text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
+}
+/* Dividers */
+
+.section-break {
+  height: 500px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.section-break .secondary-header {
+  color: #f9f9f9;
+}
+
+main section:nth-of-type(2) {
+  background: #24324a url(./img/bread.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+main section:nth-of-type(4) {
+  background: #24324a url(./img/cookies.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Footer */
+
+.copyright-disclaimer {
+  width: 100%;
+  background-color: #393b46;
+  opacity: 0.9;
+  display: flex;
+}
+
+#footer-info {
+  display: flex;
+  justify-content: space-between;
+  min-height: 200px;
+}
+
+#footer-info h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+#footer-info p {
+  font-size: 13px;
+}
+
+#footer-info > div {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+#location-list {
+  width: 35%;
+}
+
+#opening-hours {
+  width: 50%;
+}
+
+.addresses,
+.hours-wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+#copyright-text p {
+  font-size: 12px;
+}
+
+#copyright-text {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.dot {
+  padding: 0 10px;
+  font-size: 20px;
+}
+
+#footer-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: -25px;
+  transform: translateX(-50%);
+  background-color: white;
+  color: #0e131c;
+  line-height: normal;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+#footer-button:hover {
+  animation-name: topHover;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+}
+@keyframes topHover {
+  0% {
+    box-shadow: 0px;
+    background-color: white;
+  }
+  100% {
+    box-shadow: 0.5px 0.5px 0.5px 0.5px;
+    background-color: lightgrey;
+  }
+}
+#footer-button p {
+  font-size: 12px;
+}
+
+#footer-button a {
+  color: #0e131c;
+}
+
+p#nav-arrow {
+  transform: rotate(90deg);
+  font-size: 18px;
+}
+
+.CBD {
+  padding-right: 30px;
+}
+
+/* Media queries */
+
+@media all and (max-width: 575px) {
+  .divider {
+    height: 400px;
+  }
+
+  #copyright-text p {
+    font-size: 10px;
+  }
+
+  #footer-info {
+    flex-flow: column nowrap;
+  }
+
+  #location-list,
+  div#opening-hours {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  div#location-list,
+  .addresses {
+    flex-flow: column nowrap;
+  }
+
+  div#opening-hours {
+    margin-top: 30px;
+  }
+
+  div#location-list {
+    margin-top: 20px;
+  }
+
+  .CBD {
+    padding-right: 0;
+  }
+}
+
+@media all and (max-width: 700px) {
+  nav {
+    display: none;
+  }
+
+  #openNav.show,
+  #closeNav.show {
+    display: block;
+    z-index: 5;
+  }
+
+  #logo {
+    z-index: 5;
+  }
+
+  .nav-container.show_menu {
+    width: 100%;
+    height: 100vh;
+    /* we need these for when the page is in the welcome section, where the fixed_menu class is no longer active */
+    padding: 10px 40px;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    /* resetting the following ones */
+    transition: none;
+    border-bottom: none;
+    background-color: rgba(0, 0, 0, 0.9);
+    align-items: flex-start;
+  }
+
+  nav.show_menu {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    /* because the parent container has some padding, we need to get it out */
+    margin: -10px 0 0 -40px;
+  }
+
+  nav.show_menu a {
+    margin-bottom: 10px;
+  }
+
+  nav.show_menu a:nth-of-type(5) {
+    margin-right: 10px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  section#ourStory,
+  section#cuisine,
+  section#bookUs {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-container,
+  .recipes {
+    width: 100%;
+  }
+
+  section#ourStory {
+    margin-bottom: 40px;
+  }
+
+  section#cuisine {
+    margin-top: 40px;
+  }
+
+  section#bookUs {
+    margin-bottom: 60px;
+  }
+
+  .hours-wrapper div:nth-of-type(2) {
+    margin-top: 20px;
+  }
+
+  #location-list {
+    align-self: flex-start;
+  }
+
+  .hours-wrapper {
+    flex-flow: column nowrap;
+  }
+
+  #footer-info {
+    justify-content: center;
+  }
+
+  #opening-hours {
+    width: 28%;
+    padding-left: 20%;
+  }
+}
+
+@media all and (max-width: 990px) {
+  #copyright-text p {
+    font-size: 12px;
+  }
+
+  #copyright-text {
+    flex-flow: column nowrap;
+    padding: 25px 0;
+  }
+
+  #copyright-test div {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 990px) {
+  section#ourStory,
+  section#cuisine,
+  section#bookUs {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media all and (max-width: 1097px) {
+  .hours-wrapper div:nth-of-type(3) {
+    width: 100%;
+  }
+
+  .Bondi,
+  .hours-wrapper div:nth-of-type(3) {
+    margin-top: 20px;
+  }
+
+  #footer-info {
+    padding: 40px 0;
+  }
+}
+
+/* menu.html */
+.menu{
+  text-transform: capitalize;
+  /*background: url('./img/wood.jpg');*/
+  background-blend-mode: darken;
+  background: rgba(0, 0, 0, 0.8) url('./img/wood.jpg');
+  color: rgb(200,200,200);
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+}
+.main-recipe-header{
+  text-align: center;
+  color: rgb(180,200, 260);
+  margin-bottom: 60px;
+}
+.table-header{
+  font-weight: 700;
+  color: rgb(180,200, 260);
+}
+table{
+  width: 100%;
+}
+td:nth-child(2){
+  float: right;
+}
+tr{
+  justify-content: flex-end;
+  width: 100%;
+}
+td{
+  padding-bottom: 12px;
+}
