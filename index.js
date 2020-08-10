@@ -1,4 +1,3 @@
-//heacent renamed the classes and ids below
 //const navbar = document.getElementsByClassName("container")[0];
 const navbar = document.querySelector(".nav-container");
 const activeNavItem = document.getElementsByTagName("nav")[0];
@@ -29,7 +28,7 @@ function springyAnimation(func, delay = 40) {
 function toggleMenuFixed() {
   let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
-  if (scrollPosition > navbar.scrollHeight) {
+  if (scrollPosition > navbar?.scrollHeight) {
     if (!navbar.classList.contains("fixed_menu")) {
       navbar.classList.add("fixed_menu");
     }
