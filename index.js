@@ -28,13 +28,14 @@ function springyAnimation(func, delay = 40) {
 function toggleMenuFixed() {
   let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
-  if (scrollPosition > navbar?.scrollHeight) {
+  if (navbar){
+  if (scrollPosition > navbar.scrollHeight) {
     if (!navbar.classList.contains("fixed_menu")) {
       navbar.classList.add("fixed_menu");
     }
   } else {
     navbar.classList.remove("fixed_menu");
-  }
+  }}
 }
 
 function getElementYPosition(element) {
@@ -156,9 +157,11 @@ function menuToggle() {
 $(function(){
   $('.about-us-expander').css('display', 'none')
 })
-$('.about-us-button').click(function(){
+$(function(){
+  $('.about-us-button').click(function(){
 $('.about-us-expander').slideToggle()
-})
+})})
+
 
 
 window.addEventListener("scroll", springyAnimation(toggleMenuFixed));
